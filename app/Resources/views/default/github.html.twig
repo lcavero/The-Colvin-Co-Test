@@ -1,0 +1,13 @@
+<html>
+<body>
+{% if error != false %}
+    <p  style="color: red; font-weight: bold">Error: {{ error }}</p>
+{% endif %}
+{{ form_start(form) }}
+{{ form_row(form.repository) }}
+<br>
+<button type="submit">Get Words!</button>
+{{ form_end(form) }}
+</body>
+</html>
+
